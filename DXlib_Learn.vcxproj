@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3cb3bcea-324d-4cf7-a531-f2c1ece6e6fc}</ProjectGuid>
+    <RootNamespace>DXlibLearn</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CatchBall_Project</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\seiya\Documents\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawPixel.cpp" />
+    <ClCompile Include="scripts\Bases\GameBase\GameBase.cpp" />
+    <ClCompile Include="scripts\Engine\fpscounter\fpscounter.cpp" />
+    <ClCompile Include="scripts\Engine\GameData\GameData.cpp" />
+    <ClCompile Include="scripts\Engine\myGame\myGame.cpp" />
+    <ClCompile Include="scripts\Engine\MyLibrary\MyLibrary.cpp" />
+    <ClCompile Include="scripts\Engine\myPG\myPG.cpp" />
+    <ClCompile Include="scripts\Tasks\CreatorTask\Task_Infomation\Task_Infomation.cpp" />
+    <ClCompile Include="scripts\Tasks\CreatorTask\Task_TargetInfo\Task_TargetInfo.cpp" />
+    <ClCompile Include="scripts\Tasks\Effects\Task_Effect2D\Effect2D.cpp" />
+    <ClCompile Include="scripts\Tasks\Effects\Task_Effect2D\L_C_R\Effect2D_L_C_R.cpp" />
+    <ClCompile Include="scripts\Tasks\Effects\Task_Effect2D\Std\Effect2D_Std.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_Ball\Task_Ball.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_Border\Task_Border.cpp" />
+    <ClCompile Include="scripts\Tasks\CreatorTask\Task_Creator\Task_Creator.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_Frame\Task_Frame.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_GameManager\Task_GameManager.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_Ground\Task_Ground.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_NumberGUI\Task_NumberGUI.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_PlayerBase\Task_PlayerBase.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_ScoreAddNum\Task_ScoreAddNum.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_ScoreJudge\Task_ScoreJudge.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_TargetGenerator\Task_TargetGenerator.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_Target\Task_Target.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_MainGame\Task_TimeCount\Task_TimeCount.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_Result\Task_ResultBGImage\Task_ResultBGImage.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_Result\Task_ResultManager\Task_ResultManager.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_Title\Task_TitleImage\Task_TitleImage.cpp" />
+    <ClCompile Include="scripts\Tasks\Scene_Title\Task_TitleManager\Task_TitleManager.cpp" />
+    <ClCompile Include="scripts\Tasks\CreatorTask\Task_KeyInput\Task_KeyInput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scripts\Bases\GameBase\GameBase.h" />
+    <ClInclude Include="scripts\Engine\fpscounter\fpscounter.h" />
+    <ClInclude Include="scripts\Engine\GameData\GameData.h" />
+    <ClInclude Include="scripts\Engine\myGame\myGame.h" />
+    <ClInclude Include="scripts\Engine\MyLibrary\MyLibrary.h" />
+    <ClInclude Include="scripts\Engine\myPG\myPG.h" />
+    <ClInclude Include="scripts\Engine\myPG\useTaskInMYPG.h" />
+    <ClInclude Include="scripts\Engine\nlohmann\json.hpp" />
+    <ClInclude Include="scripts\Engine\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="scripts\Tasks\CreatorTask\Task_Infomation\Task_Infomation.h" />
+    <ClInclude Include="scripts\Tasks\CreatorTask\Task_TargetInfo\Task_TargetInfo.h" />
+    <ClInclude Include="scripts\Tasks\Effects\Task_Effect2D\Effect2D.h" />
+    <ClInclude Include="scripts\Tasks\Effects\Task_Effect2D\Effect2DIncludes.h" />
+    <ClInclude Include="scripts\Tasks\Effects\Task_Effect2D\L_C_R\Effect2D_L_C_R.h" />
+    <ClInclude Include="scripts\Tasks\Effects\Task_Effect2D\Std\Effect2D_Std.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Player\PlayerObject\PlayerObject.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_Ball\Task_Ball.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_Border\Task_Border.h" />
+    <ClInclude Include="scripts\Tasks\CreatorTask\Task_Creator\Task_Creator.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_Frame\Task_Frame.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_GameManager\Task_GameManager.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_Ground\Task_Ground.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_NumberGUI\Task_NumberGUI.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_PlayerBase\Task_PlayerBase.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_ScoreAddNum\Task_ScoreAddNum.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_ScoreJudge\Task_ScoreJudge.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_TargetGenerator\Task_TargetGenerator.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_Target\Task_Target.h" />
+    <ClInclude Include="scripts\Tasks\Scene_MainGame\Task_TimeCount\Task_TimeCount.h" />
+    <ClInclude Include="scripts\Tasks\Scene_Result\Task_ResultBGImage\Task_ResultBGImage.h" />
+    <ClInclude Include="scripts\Tasks\Scene_Result\Task_ResultManager\Task_ResultManager.h" />
+    <ClInclude Include="scripts\Tasks\Scene_Title\Task_TitleImage\Task_TitleImage.h" />
+    <ClInclude Include="scripts\Tasks\Scene_Title\Task_TitleManager\Task_TitleManager.h" />
+    <ClInclude Include="scripts\Tasks\CreatorTask\Task_KeyInput\Task_KeyInput.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
